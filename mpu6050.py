@@ -2,7 +2,7 @@ from imu import MPU6050
 import time
 from machine import Pin, I2C
 #raspberry pi pico üzerindeki bağlantı pinleri aşağıdadır
-i2c = I2C(1, sda=Pin(18), scl=Pin(19), freq=400000)
+i2c = I2C(1, sda=Pin(18), scl=Pin(19), freq=400000) #pin seçimi yapma ve i2c portu seçme
 imu = MPU6050(i2c)
 
 while True:
